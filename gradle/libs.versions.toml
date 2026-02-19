@@ -1,5 +1,5 @@
 [versions]
-acraCore = "5.12.0"
+acraCore = "5.13.1"
 appcompat = "1.7.1"
 constraintlayout = "2.2.1"
 espressoCore = "3.7.0"
