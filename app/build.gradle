@@ -4,6 +4,7 @@ plugins {
 
 android {
     defaultConfig {
+        compileSdk 36
         applicationId "tech.treeentertainment.camera"
         namespace = "tech.treeentertainment.camera"
         minSdk 21
