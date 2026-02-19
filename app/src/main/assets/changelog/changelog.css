@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-body
-{
+body {
   padding: 0px;
   margin-top: 4px;
   margin-right: 4px;
@@ -12,8 +11,7 @@ body
   font-size: 15px;
 }
 
-h2
-{
+h2 {
   font-size: 18px;
   text-align: left;
   margin-bottom: 5px;
@@ -27,19 +25,16 @@ h3 {
   margin: 0px 5px 0px 0px;
 }
 
-p
-{
+p {
   margin: 0px;
 }
 
-li
-{
+li {
   padding: 5px 0px 0px 0px;
   margin: 0px;
 }
 
-ul
-{
+ul {
   padding-left: 25px;
   padding-right: 10px;
   margin: 0px;

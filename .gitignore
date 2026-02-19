@@ -1,9 +1,21 @@
-.settings
-bin
-gen
-
-# Ignore Gradle project-specific cache directory
-.gradle
-
-# Ignore Gradle build output directory
-build
+.gradle/
+**/.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.properties
+local.properties
+.settings/
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.log
+.DS_Store
+Thumbs.db
+*.jks
+*.apk
+*.ap_
+*.aab
+.cxx/
+.externalNativeBuild/
+captures/

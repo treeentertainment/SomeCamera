@@ -1,6 +1,6 @@
 name: Feature Request
 description: template for missing feature
-title: '👌[feature]:'
+title: "👌[feature]:"
 labels:
   - enhancement
 body:
@@ -27,7 +27,7 @@ body:
     attributes:
       label: Any last words?
       description: You can write additional informations
-      value: 'no'
+      value: "no"
     validations:
       required: true
   - type: checkboxes
@@ -37,14 +37,14 @@ body:
         I checked that there were no issue related and this issue is unique to
         this project
       options:
-        - label: 'yes'
+        - label: "yes"
           required: true
   - type: checkboxes
     id: check2
     attributes:
       label: You didn't used any words that aren't appropriate
       options:
-        - label: 'yes'
+        - label: "yes"
           required: true
   - type: markdown
     attributes:

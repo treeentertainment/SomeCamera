@@ -2,19 +2,41 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following versions of this project are currently supported with
+security updates:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 0.1.1   | :white_check_mark: |
-| 0.1.0   | :x:                |
-| 0.0.1   | :x:                |
+  Version   Supported
+  --------- -----------
+  0.1.1     ✅ Yes
+  0.1.0     ❌ No
+  0.1.0     ❌ No
+  0.0.1     ❌ No
+
+If you are using an unsupported version, please upgrade to the latest
+supported release.
+
+---
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+We take security issues seriously. If you discover a vulnerability,
+please report it responsibly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### 📧 How to Report
+
+Send an email to the address listed in our GitHub Organization profile.
+
+When reporting, please include:
+
+-   A detailed description of the vulnerability\
+-   Steps to reproduce the issue\
+-   Potential impact assessment\
+-   Any relevant proof-of-concept or logs
+
+### 🔒 Responsible Disclosure
+
+Please do **not** disclose security vulnerabilities publicly until we
+have had a chance to investigate and address the issue.
+
+We will acknowledge receipt of your report as soon as possible and work
+with you to resolve the issue promptly.
