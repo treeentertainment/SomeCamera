@@ -10,7 +10,6 @@ android {
         targetSdk 36
         versionCode 3
         versionName "0.1.0"
-        compileSdkVersion  35
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
