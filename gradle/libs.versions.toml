@@ -23,4 +23,4 @@ material = { module = "com.google.android.material:material", version.ref = "mat
 preference = { module = "androidx.preference:preference", version.ref = "preference" }
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.2.20" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.3.10" }
