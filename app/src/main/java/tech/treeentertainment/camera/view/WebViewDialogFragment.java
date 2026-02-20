@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.webkit.WebSettings;
 
 import tech.treeentertainment.camera.R;
 
@@ -27,6 +28,8 @@ public class WebViewDialogFragment extends DialogFragment {
         getDialog().setTitle(getArguments().getInt("title"));
         View view = inflater.inflate(R.layout.webview_dialog, container, false);
         WebView webview = (WebView) view.findViewById(R.id.webview1);
+        WebSettings webSettings = webview.getSettings();
+        webSettings.setAllowContentAccess(false);
         webview.loadUrl(getArguments().getString("url"));
         view.findViewById(android.R.id.button1).setOnClickListener(new OnClickListener() {
             @Override
