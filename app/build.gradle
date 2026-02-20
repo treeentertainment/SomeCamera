@@ -17,11 +17,12 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
+        coreLibraryDesugaringEnabled true
     }
 
     packagingOptions {
         resources {
-            excludes += 'META-INF/services/javax.annotation.processing.Processor'
+            excludes += "META-INF/services/javax.annotation.processing.Processor"
         }
     }
 
@@ -53,21 +54,32 @@ android {
         debug {
             minifyEnabled false
             shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
             signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }   
+
+    buildFeatures {
+        buildConfig = true
+    }
 }
+
 dependencies {
     implementation libs.appcompat
     implementation libs.material
     implementation libs.constraintlayout
-    implementation libs.acra.core
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
     implementation libs.preference
+    implementation libs.acra.core
+    implementation libs.acra.email
+    implementation libs.google.auto.annotations
+    annotationProcessor libs.google.auto
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
 }

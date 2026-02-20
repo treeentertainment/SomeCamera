@@ -3,15 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools">
 
   <uses-feature android:name="android.hardware.usb.host"/>
+  <uses-feature android:name="android.permission.POST_NOTIFICATIONS" android:required="true"/>
   <!-- For Feedback -->
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+      android:maxSdkVersion="32"
+      tools:ignore="ScopedStorage" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
       android:maxSdkVersion="32"
       tools:ignore="ScopedStorage" />
   <!-- For Acra -->
   <uses-permission android:name="android.permission.INTERNET"/>
 
   <application
-    android:name="tech.treeentertainment.camera.RycApplication"
+    android:name=".RycApplication"
     android:icon="@mipmap/somecamera_logo_icon"
     android:label="@string/app_name"
     android:largeHeap="true"
@@ -26,22 +30,15 @@
             android:name="android.support.FILE_PROVIDER_PATHS"
             android:resource="@xml/file_paths" />
     </provider>
-    <provider
-      android:name="org.acra.attachment.AcraContentProvider"
-      android:authorities="${applicationId}.acra"
-      android:exported="false"
-      android:grantUriPermissions="true"
-      tools:ignore="MissingClass" />
-    
     <activity
-      android:name="tech.treeentertainment.camera.MainActivity"
+      android:name=".MainActivity"
       android:configChanges="orientation"
       android:label="@string/launcher_label"
       android:launchMode="singleTask"
       android:screenOrientation="sensorLandscape"
       android:exported="true"
-        android:theme="@style/Theme.SomeCamera"
-        tools:ignore="DiscouragedApi">
+      android:theme="@style/Theme.SomeCamera"
+      tools:ignore="DiscouragedApi">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -56,7 +53,7 @@
         android:resource="@xml/device_filter"/>
     </activity>
     <activity
-      android:name="tech.treeentertainment.camera.activities.AppSettingsActivity"
+      android:name=".activities.AppSettingsActivity"
       android:label="@string/activity_app_settings_title"
         android:theme="@style/Theme.SomeCamera" />
   </application>

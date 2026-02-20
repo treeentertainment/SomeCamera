@@ -3,9 +3,9 @@ package tech.treeentertainment.camera.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import androidx.appcompat.widget.AppCompatImageView;
 
-public class AspectRatioImageView extends ImageView {
+public class AspectRatioImageView extends AppCompatImageView {
 
     private int thumbWidth;
     private int thumbHeight;

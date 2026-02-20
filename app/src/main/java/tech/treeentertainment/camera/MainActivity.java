@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import androidx.annotation.Keep;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -243,6 +244,7 @@ public class MainActivity extends SessionActivity implements CameraListener {
     }
 
 
+    @Keep
     public void onMenuFeedbackClicked(MenuItem item) {
         new MaterialAlertDialogBuilder(this, R.style.CustomAlertDialogTheme)
                 .setTitle(R.string.feedback_dialog_title)
@@ -302,14 +304,17 @@ public class MainActivity extends SessionActivity implements CameraListener {
 
 
 
+    @Keep
     public void onMenuChangelogClicked(MenuItem item) {
         showChangelog();
     }
 
+    @Keep
     public void onMenuSettingsClicked(MenuItem item) {
         startActivity(new Intent(this, AppSettingsActivity.class));
     }
 
+    @Keep
     public void onMenuAboutClicked(MenuItem item) {
         View view = getLayoutInflater().inflate(R.layout.about_dialog, null);
         ((TextView) view.findViewById(R.id.about_dialog_version))

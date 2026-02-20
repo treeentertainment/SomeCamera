@@ -1,11 +1,10 @@
-
 package tech.treeentertainment.camera.view;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import androidx.fragment.app.FragmentTransaction;  // ✅ 올바른 import
+import androidx.fragment.app.FragmentTransaction;  
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
