@@ -66,7 +66,7 @@ jobs:
       - name: Decode keystore
         run: |
           echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" \
-            | base64 --decode > app/SomeCamera-release.keystore
+            | base64 --decode > app/some-camera-release.keystore
 
       - name: Build Release APK
         env:
