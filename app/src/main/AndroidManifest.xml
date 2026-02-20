@@ -19,7 +19,8 @@
     android:icon="@mipmap/somecamera_logo_icon"
     android:label="@string/app_name"
     android:largeHeap="true"
-    android:theme="@style/Theme.SomeCamera" >
+    android:theme="@style/Theme.SomeCamera"
+    android:allowBackup="false">
   
    <provider
         android:name="androidx.core.content.FileProvider"
