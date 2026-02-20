@@ -13,6 +13,9 @@ on:
       ANDROID_KEY_PASSWORD:
         required: true
 
+permissions:
+  contents: read
+
 jobs:
   build-android-release:
     name: Android Release
