@@ -1,3 +1,3 @@
-# Keep annotation processors for R8
--keep class javax.annotation.processing.** { *; }
--keep class com.google.auto.service.** { *; }
+-dontwarn com.google.auto.service.**
+-keep class com.google.auto.service.processor.AutoServiceProcessor { *; }
+-keepclassmembers class com.google.auto.service.processor.AutoServiceProcessor { *; }
