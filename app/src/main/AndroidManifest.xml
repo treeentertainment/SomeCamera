@@ -26,7 +26,12 @@
             android:name="android.support.FILE_PROVIDER_PATHS"
             android:resource="@xml/file_paths" />
     </provider>
-    
+    <provider
+      android:name="org.acra.attachment.AcraContentProvider"
+      android:authorities="${applicationId}.acra"
+      android:exported="false"
+      android:grantUriPermissions="true"
+      tools:ignore="MissingClass" />
     
     <activity
       android:name="tech.treeentertainment.camera.MainActivity"

@@ -5,12 +5,12 @@
 The following versions of this project are currently supported with
 security updates:
 
-  Version   Supported
-  --------- -----------
-  0.1.1     ✅ Yes
-  0.1.0     ❌ No
-  0.1.0     ❌ No
-  0.0.1     ❌ No
+| Version | Supported |
+| ------- | --------- |
+| 0.1.2   | ✅        |
+| 0.1.1   | ❌        |
+| 0.1.0   | ❌        |
+| 0.0.1   | ❌        |
 
 If you are using an unsupported version, please upgrade to the latest
 supported release.
@@ -28,10 +28,10 @@ Send an email to the address listed in our GitHub Organization profile.
 
 When reporting, please include:
 
--   A detailed description of the vulnerability\
--   Steps to reproduce the issue\
--   Potential impact assessment\
--   Any relevant proof-of-concept or logs
+- A detailed description of the vulnerability
+- Steps to reproduce the issue
+- Potential impact assessment
+- Any relevant proof-of-concept or logs
 
 ### 🔒 Responsible Disclosure
 

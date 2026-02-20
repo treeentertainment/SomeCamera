@@ -3,6 +3,15 @@ name: Android Release CI
 on:
   workflow_dispatch:
   workflow_call:
+    secrets:
+      ANDROID_KEYSTORE_BASE64:
+        required: true
+      ANDROID_KEYSTORE_PASSWORD:
+        required: true
+      ANDROID_KEY_ALIAS:
+        required: true
+      ANDROID_KEY_PASSWORD:
+        required: true
 
 jobs:
   build-android-release:
@@ -37,8 +46,8 @@ jobs:
       - name: Install required SDK packages
         run: |
           sdkmanager "platform-tools" \
-                     "platforms;android-34" \
-                     "build-tools;34.0.0"
+                     "platforms;android-36" \
+                     "build-tools;36.0.0"
 
       - name: Cache Gradle
         uses: actions/cache@v5
@@ -54,7 +63,16 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
+      - name: Decode keystore
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" \
+            | base64 --decode > app/SomeCamera-release.keystore
+
       - name: Build Release APK
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
           ./gradlew assembleRelease \
             --parallel \

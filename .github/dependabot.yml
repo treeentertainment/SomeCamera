@@ -1,25 +1,25 @@
 version: 2
 updates:
-  - package-ecosystem: 'gradle'
-    directory: '/'
+  - package-ecosystem: "gradle"
+    directory: "/"
     schedule:
-      interval: 'daily'
+      interval: "daily"
     open-pull-requests-limit: 10
-    rebase-strategy: 'auto'
+    rebase-strategy: "auto"
     labels:
-      - 'dependencies'
+      - "dependencies"
     commit-message:
-      prefix: 'chore'
-      include: 'scope'
+      prefix: "chore"
+      include: "scope"
 
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: 'daily'
+      interval: "daily"
     open-pull-requests-limit: 10
-    rebase-strategy: 'auto'
+    rebase-strategy: "auto"
     labels:
-      - 'dependencies'
+      - "dependencies"
     commit-message:
-      prefix: 'chore'
-      include: 'scope'
+      prefix: "chore"
+      include: "scope"

@@ -7,20 +7,20 @@ on:
   workflow_dispatch:
     inputs:
       tag_name:
-        description: 'Release tag (ex: v1.2.3)'
+        description: "Release tag (ex: v1.2.3)"
         required: true
       release_title:
-        description: 'Release title'
+        description: "Release title"
         required: true
       release_body:
-        description: 'Release notes'
+        description: "Release notes"
         required: false
       draft:
-        description: 'Create as draft'
+        description: "Create as draft"
         required: false
         type: boolean
       prerelease:
-        description: 'Create as prerelease'
+        description: "Create as prerelease"
         required: false
         type: boolean
 
