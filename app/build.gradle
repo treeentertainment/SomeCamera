@@ -9,8 +9,8 @@ android {
         namespace = "tech.treeentertainment.camera"
         minSdk 21
         targetSdk 36
-        versionCode 3
-        versionName "0.1.0"
+        versionCode 4
+        versionName "V0.1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
