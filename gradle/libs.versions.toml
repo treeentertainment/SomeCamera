@@ -6,7 +6,7 @@ espressoCore = "3.7.0"
 gradle = "9.2.1"
 junit = "4.13.2"
 junitVersion = "1.3.0"
-material = "1.13.0"
+material = "1.14.0"
 preference = "1.2.1"
 googleAuto = "1.1.1"
 
